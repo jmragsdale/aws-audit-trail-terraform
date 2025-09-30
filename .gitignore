@@ -1,0 +1,15 @@
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+builds/
+*.zip
+__pycache__/
+*.py[cod]
+.vscode/
+.DS_Store
+*.pem
+.env
