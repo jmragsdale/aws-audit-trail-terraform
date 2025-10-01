@@ -73,7 +73,7 @@ Any tampering breaks the chain and is detected.
 terraform destroy
 ```
 
-## Resume Talking Points
+## Talking Points
 
 - Blockchain-inspired audit system for financial compliance
 - Cryptographic hash chaining for tamper detection
