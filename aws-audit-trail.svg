@@ -1,7 +1,39 @@
-<svg viewBox="0 0 1200 950" width="1200" height="950" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 950"
+   width="1200"
+   height="950"
+   version="1.1"
+   id="svg63"
+   sodipodi:docname="aws-audit-trail.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview63"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0011472"
+     inkscape:cx="453.47977"
+     inkscape:cy="430.0067"
+     inkscape:window-width="1728"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg63" />
   <!-- Define styles -->
-  <defs>
-    <style>
+  <defs
+     id="defs1">
+    <style
+       id="style1">
       .box { fill: #fff; stroke: #000; stroke-width: 2; }
       .text { font-family: Arial, sans-serif; font-size: 12px; fill: #000; }
       .title-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #000; }
@@ -11,145 +43,598 @@
       .step-text { font-family: Arial, sans-serif; font-size: 12px; fill: #000; font-style: italic; }
       .chain { stroke: #000; stroke-width: 3; }
     </style>
-    
     <!-- Arrow marker -->
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" class="arrow" />
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3, 0 6"
+         class="arrow"
+         id="polygon1" />
     </marker>
   </defs>
-  
   <!-- Title -->
-  <text x="600" y="40" text-anchor="middle" class="header">AWS Immutable Audit Trail Architecture</text>
-  <text x="600" y="65" text-anchor="middle" style="font-size: 14px; fill: #666;">Blockchain-Style Hash Chaining for Financial Compliance</text>
-  
+  <text
+     x="600"
+     y="40"
+     text-anchor="middle"
+     class="header"
+     id="text1">AWS Immutable Audit Trail Architecture</text>
+  <text
+     x="600"
+     y="65"
+     text-anchor="middle"
+     style="font-size: 14px; fill: #666;"
+     id="text2">Blockchain-Style Hash Chaining for Financial Compliance</text>
   <!-- Client Application -->
-  <rect x="100" y="120" width="200" height="100" class="box" rx="5"/>
-  <text x="200" y="155" text-anchor="middle" class="title-text">Client Application</text>
-  <text x="200" y="180" text-anchor="middle" style="font-size: 11px;">Creates audit entries</text>
-  <text x="200" y="200" text-anchor="middle" style="font-size: 10px;">POST /audit</text>
-  
+  <rect
+     x="100"
+     y="120"
+     width="200"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect2" />
+  <text
+     x="200"
+     y="155"
+     text-anchor="middle"
+     class="title-text"
+     id="text3">Client Application</text>
+  <text
+     x="200"
+     y="180"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text4">Creates audit entries</text>
+  <text
+     x="200"
+     y="200"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text5">POST /audit</text>
   <!-- API Gateway -->
-  <rect x="360" y="120" width="200" height="100" class="box" rx="5"/>
-  <text x="460" y="155" text-anchor="middle" class="title-text">API Gateway</text>
-  <text x="460" y="180" text-anchor="middle" style="font-size: 11px;">RESTful Endpoints</text>
-  <text x="460" y="200" text-anchor="middle" style="font-size: 10px;">POST /audit</text>
-  <text x="460" y="215" text-anchor="middle" style="font-size: 10px;">GET /audit/verify</text>
-  
+  <rect
+     x="360"
+     y="120"
+     width="200"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect5" />
+  <text
+     x="460"
+     y="155"
+     text-anchor="middle"
+     class="title-text"
+     id="text6">API Gateway</text>
+  <text
+     x="460"
+     y="180"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text7">RESTful Endpoints</text>
+  <text
+     x="460"
+     y="200"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text8">POST /audit</text>
+  <text
+     x="460"
+     y="215"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text9">GET /audit/verify</text>
   <!-- Lambda Function -->
-  <rect x="620" y="120" width="200" height="100" class="box" rx="5"/>
-  <text x="720" y="155" text-anchor="middle" class="title-text">AWS Lambda</text>
-  <text x="720" y="180" text-anchor="middle" class="title-text">Audit Processor</text>
-  <text x="720" y="200" text-anchor="middle" style="font-size: 10px;">Hash calculation</text>
-  <text x="720" y="215" text-anchor="middle" style="font-size: 10px;">Chain verification</text>
-  
+  <rect
+     x="620"
+     y="120"
+     width="200"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect9" />
+  <text
+     x="720"
+     y="155"
+     text-anchor="middle"
+     class="title-text"
+     id="text10">AWS Lambda</text>
+  <text
+     x="720"
+     y="180"
+     text-anchor="middle"
+     class="title-text"
+     id="text11">Audit Processor</text>
+  <text
+     x="720"
+     y="200"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text12">Hash calculation</text>
+  <text
+     x="720"
+     y="215"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text13">Chain verification</text>
   <!-- Flow arrows -->
-  <line x1="300" y1="170" x2="360" y2="170" class="line" marker-end="url(#arrowhead)"/>
-  <text x="330" y="160" class="step-text">HTTPS</text>
-  
-  <line x1="560" y1="170" x2="620" y2="170" class="line" marker-end="url(#arrowhead)"/>
-  <text x="590" y="160" class="step-text">Invoke</text>
-  
+  <line
+     x1="300"
+     y1="170"
+     x2="360"
+     y2="170"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line13" />
+  <text
+     x="310"
+     y="160"
+     class="step-text"
+     id="text14">HTTPS</text>
+  <line
+     x1="560"
+     y1="170"
+     x2="620"
+     y2="170"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line14" />
+  <text
+     x="572"
+     y="160"
+     class="step-text"
+     id="text15">Invoke</text>
   <!-- Hash Chain Visualization -->
-  <rect x="100" y="280" width="1000" height="180" class="box" rx="5"/>
-  <text x="600" y="310" text-anchor="middle" class="title-text">Blockchain-Inspired Hash Chain</text>
-  
+  <rect
+     x="100"
+     y="280"
+     width="1000"
+     height="180"
+     class="box"
+     rx="5"
+     id="rect15" />
+  <text
+     x="600"
+     y="310"
+     text-anchor="middle"
+     class="title-text"
+     id="text16">Blockchain-Inspired Hash Chain</text>
   <!-- Entry 1 -->
-  <rect x="130" y="340" width="180" height="100" class="box" rx="3"/>
-  <text x="220" y="365" text-anchor="middle" style="font-size: 11px; font-weight: bold;">Entry N-1</text>
-  <text x="220" y="385" text-anchor="middle" style="font-size: 9px;">Transaction: TXN-001</text>
-  <text x="220" y="400" text-anchor="middle" style="font-size: 9px;">Hash: ABC123...</text>
-  <text x="220" y="415" text-anchor="middle" style="font-size: 9px;">PrevHash: XYZ...</text>
-  <text x="220" y="430" text-anchor="middle" style="font-size: 9px;">Timestamp: 10:00</text>
-  
+  <rect
+     x="130"
+     y="340"
+     width="180"
+     height="100"
+     class="box"
+     rx="3"
+     id="rect16" />
+  <text
+     x="220"
+     y="365"
+     text-anchor="middle"
+     style="font-size: 11px; font-weight: bold;"
+     id="text17">Entry N-1</text>
+  <text
+     x="220"
+     y="385"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text18">Transaction: TXN-001</text>
+  <text
+     x="220"
+     y="400"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text19">Hash: ABC123...</text>
+  <text
+     x="220"
+     y="415"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text20">PrevHash: XYZ...</text>
+  <text
+     x="220"
+     y="430"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text21">Timestamp: 10:00</text>
   <!-- Chain link 1 -->
-  <line x1="310" y1="390" x2="370" y2="390" class="chain" marker-end="url(#arrowhead)"/>
-  
+  <line
+     x1="310"
+     y1="390"
+     x2="370"
+     y2="390"
+     class="chain"
+     marker-end="url(#arrowhead)"
+     id="line21" />
   <!-- Entry 2 -->
-  <rect x="370" y="340" width="180" height="100" class="box" rx="3"/>
-  <text x="460" y="365" text-anchor="middle" style="font-size: 11px; font-weight: bold;">Entry N</text>
-  <text x="460" y="385" text-anchor="middle" style="font-size: 9px;">Transaction: TXN-002</text>
-  <text x="460" y="400" text-anchor="middle" style="font-size: 9px;">Hash: DEF456...</text>
-  <text x="460" y="415" text-anchor="middle" style="font-size: 9px;">PrevHash: ABC123...</text>
-  <text x="460" y="430" text-anchor="middle" style="font-size: 9px;">Timestamp: 10:15</text>
-  
+  <rect
+     x="370"
+     y="340"
+     width="180"
+     height="100"
+     class="box"
+     rx="3"
+     id="rect21" />
+  <text
+     x="460"
+     y="365"
+     text-anchor="middle"
+     style="font-size: 11px; font-weight: bold;"
+     id="text22">Entry N</text>
+  <text
+     x="460"
+     y="385"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text23">Transaction: TXN-002</text>
+  <text
+     x="460"
+     y="400"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text24">Hash: DEF456...</text>
+  <text
+     x="460"
+     y="415"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text25">PrevHash: ABC123...</text>
+  <text
+     x="460"
+     y="430"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text26">Timestamp: 10:15</text>
   <!-- Chain link 2 -->
-  <line x1="550" y1="390" x2="610" y2="390" class="chain" marker-end="url(#arrowhead)"/>
-  
+  <line
+     x1="550"
+     y1="390"
+     x2="610"
+     y2="390"
+     class="chain"
+     marker-end="url(#arrowhead)"
+     id="line26" />
   <!-- Entry 3 -->
-  <rect x="610" y="340" width="180" height="100" class="box" rx="3"/>
-  <text x="700" y="365" text-anchor="middle" style="font-size: 11px; font-weight: bold;">Entry N+1</text>
-  <text x="700" y="385" text-anchor="middle" style="font-size: 9px;">Transaction: TXN-003</text>
-  <text x="700" y="400" text-anchor="middle" style="font-size: 9px;">Hash: GHI789...</text>
-  <text x="700" y="415" text-anchor="middle" style="font-size: 9px;">PrevHash: DEF456...</text>
-  <text x="700" y="430" text-anchor="middle" style="font-size: 9px;">Timestamp: 10:30</text>
-  
+  <rect
+     x="610"
+     y="340"
+     width="180"
+     height="100"
+     class="box"
+     rx="3"
+     id="rect26" />
+  <text
+     x="700"
+     y="365"
+     text-anchor="middle"
+     style="font-size: 11px; font-weight: bold;"
+     id="text27">Entry N+1</text>
+  <text
+     x="700"
+     y="385"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text28">Transaction: TXN-003</text>
+  <text
+     x="700"
+     y="400"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text29">Hash: GHI789...</text>
+  <text
+     x="700"
+     y="415"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text30">PrevHash: DEF456...</text>
+  <text
+     x="700"
+     y="430"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text31">Timestamp: 10:30</text>
   <!-- Chain link 3 -->
-  <line x1="790" y1="390" x2="850" y2="390" class="chain" marker-end="url(#arrowhead)"/>
-  
+  <line
+     x1="790"
+     y1="390"
+     x2="850"
+     y2="390"
+     class="chain"
+     marker-end="url(#arrowhead)"
+     id="line31" />
   <!-- New Entry -->
-  <rect x="850" y="340" width="180" height="100" class="box" rx="3"/>
-  <text x="940" y="365" text-anchor="middle" style="font-size: 11px; font-weight: bold;">New Entry</text>
-  <text x="940" y="385" text-anchor="middle" style="font-size: 9px;">Transaction: TXN-004</text>
-  <text x="940" y="400" text-anchor="middle" style="font-size: 9px;">Hash: Computing...</text>
-  <text x="940" y="415" text-anchor="middle" style="font-size: 9px;">PrevHash: GHI789...</text>
-  <text x="940" y="430" text-anchor="middle" style="font-size: 9px;">Timestamp: 10:45</text>
-  
+  <rect
+     x="850"
+     y="340"
+     width="180"
+     height="100"
+     class="box"
+     rx="3"
+     id="rect31" />
+  <text
+     x="940"
+     y="365"
+     text-anchor="middle"
+     style="font-size: 11px; font-weight: bold;"
+     id="text32">New Entry</text>
+  <text
+     x="940"
+     y="385"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text33">Transaction: TXN-004</text>
+  <text
+     x="940"
+     y="400"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text34">Hash: Computing...</text>
+  <text
+     x="940"
+     y="415"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text35">PrevHash: GHI789...</text>
+  <text
+     x="940"
+     y="430"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text36">Timestamp: 10:45</text>
   <!-- DynamoDB -->
-  <rect x="100" y="520" width="280" height="120" class="box" rx="5"/>
-  <text x="240" y="555" text-anchor="middle" class="title-text">Amazon DynamoDB</text>
-  <text x="240" y="575" text-anchor="middle" style="font-size: 12px;">Audit Log Storage</text>
-  
-  <text x="240" y="605" text-anchor="middle" style="font-size: 11px;">• Point-in-time recovery (PITR)</text>
-  <text x="240" y="625" text-anchor="middle" style="font-size: 11px;">• Encrypted at rest</text>
-  
+  <rect
+     x="100"
+     y="520"
+     width="280"
+     height="120"
+     class="box"
+     rx="5"
+     id="rect36" />
+  <text
+     x="240"
+     y="549"
+     text-anchor="middle"
+     class="title-text"
+     id="text37">Amazon DynamoDB</text>
+  <text
+     x="240"
+     y="575"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text38">Audit Log Storage</text>
+  <text
+     x="240"
+     y="600.13281"
+     text-anchor="middle"
+     style="font-size:11px"
+     id="text39">• Point-in-time recovery (PITR)</text>
+  <text
+     x="240"
+     y="625"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text40">• Encrypted at rest</text>
   <!-- S3 Immutable Storage -->
-  <rect x="460" y="520" width="280" height="120" class="box" rx="5"/>
-  <text x="600" y="555" text-anchor="middle" class="title-text">Amazon S3</text>
-  <text x="600" y="575" text-anchor="middle" style="font-size: 12px;">Immutable Archives</text>
-  
-  <text x="600" y="605" text-anchor="middle" style="font-size: 11px;">• Object Lock (WORM)</text>
-  <text x="600" y="625" text-anchor="middle" style="font-size: 11px;">• Versioning enabled</text>
-  
+  <rect
+     x="460"
+     y="520"
+     width="280"
+     height="120"
+     class="box"
+     rx="5"
+     id="rect40" />
+  <text
+     x="600"
+     y="549.1709"
+     text-anchor="middle"
+     class="title-text"
+     id="text41">Amazon S3</text>
+  <text
+     x="600"
+     y="575"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text42">Immutable Archives</text>
+  <text
+     x="600"
+     y="598.95483"
+     text-anchor="middle"
+     style="font-size:11px"
+     id="text43">• Object Lock (WORM)</text>
+  <text
+     x="600"
+     y="625"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text44">• Versioning enabled</text>
   <!-- S3 Glacier -->
-  <rect x="820" y="520" width="280" height="120" class="box" rx="5"/>
-  <text x="960" y="555" text-anchor="middle" class="title-text">S3 Glacier</text>
-  <text x="960" y="575" text-anchor="middle" style="font-size: 12px;">Long-Term Retention</text>
-  
-  <text x="960" y="605" text-anchor="middle" style="font-size: 11px;">• 7-year retention</text>
-  <text x="960" y="625" text-anchor="middle" style="font-size: 11px;">• Cost-optimized archival</text>
-  
+  <rect
+     x="820"
+     y="520"
+     width="280"
+     height="120"
+     class="box"
+     rx="5"
+     id="rect44" />
+  <text
+     x="960"
+     y="549.1709"
+     text-anchor="middle"
+     class="title-text"
+     id="text45">S3 Glacier</text>
+  <text
+     x="960"
+     y="575"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text46">Long-Term Retention</text>
+  <text
+     x="960"
+     y="599.97974"
+     text-anchor="middle"
+     style="font-size:11px"
+     id="text47">• 7-year retention</text>
+  <text
+     x="960"
+     y="625"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text48">• Cost-optimized archival</text>
   <!-- Arrows from Lambda to storage -->
-  <line x1="720" y1="220" x2="240" y2="520" class="line" marker-end="url(#arrowhead)"/>
-  <text x="420" y="360" class="step-text">Write audit log</text>
-  
-  <line x1="720" y1="220" x2="600" y2="520" class="line" marker-end="url(#arrowhead)"/>
-  <text x="660" y="360" class="step-text">Archive copy</text>
-  
+  <line
+     x1="720"
+     y1="220"
+     x2="240"
+     y2="520"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line48" />
+  <text
+     x="420"
+     y="354"
+     class="step-text"
+     id="text49">Write audit log</text>
+  <line
+     x1="720"
+     y1="220"
+     x2="600"
+     y2="520"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line49" />
+  <text
+     x="660"
+     y="354"
+     class="step-text"
+     id="text50">Archive copy</text>
   <!-- Lifecycle arrow -->
-  <line x1="740" y1="580" x2="820" y2="580" class="line" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
-  <text x="780" y="570" class="step-text">Lifecycle</text>
-  
+  <line
+     x1="740"
+     y1="580"
+     x2="820"
+     y2="580"
+     class="line"
+     marker-end="url(#arrowhead)"
+     stroke-dasharray="5,5"
+     id="line50" />
+  <text
+     x="758"
+     y="570"
+     class="step-text"
+     id="text51">Lifecycle</text>
   <!-- CloudWatch -->
-  <rect x="100" y="700" width="280" height="100" class="box" rx="5"/>
-  <text x="240" y="735" text-anchor="middle" class="title-text">CloudWatch</text>
-  <text x="240" y="760" text-anchor="middle" style="font-size: 11px;">• Performance monitoring</text>
-  <text x="240" y="780" text-anchor="middle" style="font-size: 11px;">• Chain integrity alerts</text>
-  
+  <rect
+     x="100"
+     y="700"
+     width="280"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect51" />
+  <text
+     x="240"
+     y="727"
+     text-anchor="middle"
+     class="title-text"
+     id="text52">CloudWatch</text>
+  <text
+     x="240"
+     y="760"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text53">• Performance monitoring</text>
+  <text
+     x="240"
+     y="780"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text54">• Chain integrity alerts</text>
   <!-- Compliance -->
-  <rect x="460" y="700" width="280" height="100" class="box" rx="5"/>
-  <text x="600" y="735" text-anchor="middle" class="title-text">Compliance Standards</text>
-  <text x="600" y="760" text-anchor="middle" style="font-size: 11px;">• SOX • PCI-DSS 10.x • GDPR</text>
-  <text x="600" y="780" text-anchor="middle" style="font-size: 11px;">• Tamper detection • Audit trails</text>
-  
+  <rect
+     x="460"
+     y="700"
+     width="280"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect54" />
+  <text
+     x="600"
+     y="727"
+     text-anchor="middle"
+     class="title-text"
+     id="text55">Compliance Standards</text>
+  <text
+     x="600"
+     y="760"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text56">• SOX • PCI-DSS 10.x • GDPR</text>
+  <text
+     x="600"
+     y="780"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text57">• Tamper detection • Audit trails</text>
   <!-- Security Features -->
-  <rect x="820" y="700" width="280" height="100" class="box" rx="5"/>
-  <text x="960" y="735" text-anchor="middle" class="title-text">Security Features</text>
-  <text x="960" y="760" text-anchor="middle" style="font-size: 11px;">• Encryption in transit (TLS)</text>
-  <text x="960" y="780" text-anchor="middle" style="font-size: 11px;">• Encryption at rest (AES-256)</text>
-  
+  <rect
+     x="820"
+     y="700"
+     width="280"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect57" />
+  <text
+     x="960"
+     y="727"
+     text-anchor="middle"
+     class="title-text"
+     id="text58">Security Features</text>
+  <text
+     x="960"
+     y="760"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text59">• Encryption in transit (TLS)</text>
+  <text
+     x="960"
+     y="780"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text60">• Encryption at rest (AES-256)</text>
   <!-- Infrastructure Note -->
-  <rect x="100" y="840" width="1000" height="80" class="box" rx="5"/>
-  <text x="600" y="870" text-anchor="middle" class="title-text">Infrastructure as Code - Terraform</text>
-  <text x="120" y="895" class="text" style="font-size: 11px;">✓ Deploy: ./scripts/deploy.sh  |  ✓ Test: ./scripts/test-audit.sh  |  ✓ Cost: ~$3-15/month  |  ✓ Cleanup: terraform destroy</text>
-  <text x="120" y="915" class="text" style="font-size: 11px;">✓ SHA-256 hash chaining prevents tampering  |  ✓ Processing: 10K+ daily audits  |  ✓ Any chain modification is immediately detected</text>
+  <rect
+     x="100"
+     y="840"
+     width="1000"
+     height="80"
+     class="box"
+     rx="5"
+     id="rect60" />
+  <text
+     x="600"
+     y="870"
+     text-anchor="middle"
+     class="title-text"
+     id="text61">Infrastructure as Code - Terraform</text>
+  <text
+     x="120"
+     y="895"
+     class="text"
+     style="font-size: 11px;"
+     id="text62">✓ Deploy: ./scripts/deploy.sh  |  ✓ Test: ./scripts/test-audit.sh  |  ✓ Cost: ~$3-15/month  |  ✓ Cleanup: terraform destroy</text>
+  <text
+     x="120"
+     y="915"
+     class="text"
+     style="font-size: 11px;"
+     id="text63">✓ SHA-256 hash chaining prevents tampering  |  ✓ Processing: 10K+ daily audits  |  ✓ Any chain modification is immediately detected</text>
 </svg>
