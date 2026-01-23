@@ -13,3 +13,5 @@ __pycache__/
 .DS_Store
 *.pem
 .env
+
+*_onenote.html
