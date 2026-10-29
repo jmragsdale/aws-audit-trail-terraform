@@ -1,0 +1,77 @@
+{
+  "title": "AWS Financial Audit Trail",
+  "titleFontSize": 78,
+  "mobileTitle": [
+    "AWS financial",
+    "audit trail"
+  ],
+  "eyebrow": "AUDIT + EVIDENCE",
+  "tagline": "Trace events. Inspect integrity.",
+  "mobileTagline": [
+    "Trace events.",
+    "Inspect integrity."
+  ],
+  "description": [
+    "An audit-processing reference using Lambda and DynamoDB.",
+    "Terraform, event handlers and verification scripts."
+  ],
+  "mobileDescription": [
+    "Lambda and DynamoDB audit-processing code.",
+    "Terraform and verification scripts."
+  ],
+  "footerLeft": "TERRAFORM",
+  "footerMiddle": "AWS / LAMBDA / DYNAMODB",
+  "footerRight": "EVENT / RECORD / VERIFY",
+  "diagram": [
+    "EVENT",
+    "RECORD",
+    "VERIFY"
+  ],
+  "summary": "An AWS audit-processing reference with Terraform infrastructure, Lambda handlers and a chain-verification workflow.",
+  "cards": [
+    {
+      "slug": "architecture",
+      "category": "ARCHITECTURE",
+      "title": "Follow the architecture",
+      "lines": [
+        "Review the components and the",
+        "documented processing or access flow."
+      ],
+      "footer": "DESIGN / REFERENCE FLOW",
+      "href": "aws-audit-trail.svg"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Read the Terraform source",
+      "lines": [
+        "Inspect infrastructure declarations",
+        "and their configuration inputs."
+      ],
+      "footer": "SOURCE / REFERENCE CODE",
+      "href": "main.tf"
+    },
+    {
+      "slug": "processor",
+      "category": "PROCESSING CODE",
+      "title": "Inspect the event handler",
+      "lines": [
+        "Read the audit-entry processor",
+        "and its data-handling logic."
+      ],
+      "footer": "PYTHON / LAMBDA HANDLER",
+      "href": "lambda/processor/index.py"
+    },
+    {
+      "slug": "verification",
+      "category": "VERIFICATION WORKFLOW",
+      "title": "Review the test workflow",
+      "lines": [
+        "Inspect the audit-test script",
+        "before running it in an account."
+      ],
+      "footer": "SCRIPT / ACCOUNT PREREQUISITES",
+      "href": "scripts/test-audit.sh"
+    }
+  ]
+}
